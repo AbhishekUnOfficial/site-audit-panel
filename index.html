@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Audit Panel (React)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="root"></div>
+
+<!-- If this box ever appears, React/ReactDOM failed to load (usually no internet on first load) -->
+<div id="load-error" style="display:none;padding:40px;font-family:monospace;color:#ef5959;max-width:640px;margin:0 auto;">
+  <h2 style="margin-top:0;">Couldn't load React</h2>
+  <p>This app loads the React library from a CDN the first time you open it. That failed to load — usually because there's no internet connection right now, or the CDN is blocked on this network.</p>
+  <p>Connect to the internet and reload the page. After the first successful load, most browsers cache the library so it keeps working offline.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+<script>
+  // If the CDN scripts above failed to load, show a clear message instead of a blank page.
+  if (typeof React === 'undefined' || typeof ReactDOM === 'undefined') {
+    document.getElementById('load-error').style.display = 'block';
+  }
+</script>
+<script src="app.js"></script>
+</body>
+</html>
