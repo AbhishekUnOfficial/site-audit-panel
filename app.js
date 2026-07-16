@@ -15,7 +15,7 @@ const FIELD_GROUPS = [
       ['refNo','Ref No.','text'],
       ['district','District','titleCaseText'],
       ['zone','Zone','locked','West Bengal'],
-      ['partnerName','Partner Name','select',['Matri International','RGS','Teletech','Telepower,']],
+      ['partnerName','Partner Name','select',['Matri International','RGS','Teletech','Telepower','RKI']],
       ['stage','Stage','locked','E1'],
       ['siteType','Site Type','select',['GBT','RTT','RTP','ULS']],
       ['towerHeight','Tower Height','select',['40 m','30 m','15 m','12 m']],
