@@ -430,7 +430,7 @@ function PunchList(props){
 
 function PunchPointModal(props){
   const { onClose, onConfirm } = props;
-  const [category, setCategory] = useState('rectifiedPunchPoints');
+  const [category, setCategory] = useState('punchPoints');
   const [code, setCode] = useState('');
   const [desc, setDesc] = useState('');
   const descRef = useRef(null);
