@@ -125,14 +125,14 @@ function buildFullStatusText(a){
     `QE Name :- ${a.qeName || ''}`,
     `Site Name :- ${a.siteName || ''}`,
     `Indus ID :- ${a.indusId || ''}`,
-    `Ref No.- ${a.refNo || ''}`,
+    `Ref No. :- ${a.refNo || ''}`,
     `District :- ${a.district || ''}`,
-    `Zone- ${a.zone || ''}`,
+    `Zone :- ${a.zone || ''}`,
     `Partner Name :- ${a.partnerName || ''}`,
-    `Stage- ${a.stage || ''}`,
+    `Stage :- ${a.stage || ''}`,
     `Site type (GBT/RTT/RTP/ULS) :- ${a.siteType || ''}`,
-    `Tower Height- ${a.towerHeight || ''}`,
-    `Tower Type (Eco/VT/GBM/Pole)- ${a.towerType || ''}`,
+    `Tower Height :- ${a.towerHeight || ''}`,
+    `Tower Type (Eco/VT/GBM/Pole) :- ${a.towerType || ''}`,
     `If VT tower FPS installed (Yes/No) :- ${a.vtFps || ''}`,
     `Site levelling (Yes/No) :- ${a.siteLevelling || ''}`,
     `OD Bed Height :- ${a.odBedHeight || ''}`,
@@ -154,7 +154,7 @@ function buildFullStatusText(a){
     `Earthing value (Ohms) :- ${a.earthingValue ? a.earthingValue + ' Ω' : ''}`,
     `EN Voltage :- ${a.enVoltage ? a.enVoltage + ' V' : ''}`,
     `Solar Status (Yes/No) :- ${a.solarStatus || ''}`,
-    `Online JMS(Yes/no):- ${jmsLine}`,
+    `Online JMS(Yes/no) :- ${jmsLine}`,
     `Check sheet (Yes/no) :- ${csLine}`,
     ``,
 
@@ -246,7 +246,7 @@ function seedAudit(){
       {code:'ELEC-20', desc:'Solar generation not proper (close to zero)'},
     ],
     observations:[],
-    inTime:'11:17', outTime:'23:27', transportMode:'Public', distance:'60 KM', status:'NA',
+    inTime:'11:17', outTime:'23:27', transportMode:'Public', distance:'60', status:'NA',
   };
 }
 
