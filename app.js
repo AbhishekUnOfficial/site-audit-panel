@@ -553,7 +553,7 @@ function AuditDrawer(props){
       h('div', {className:'drawer-body'},
         FIELD_GROUPS.map(group => FieldGroupSection({group:group, draft:displayDraft, onChange:updateField})),
         h('div', {className:'section'},
-          h('div', {className:'section-title'}, 'Punch Points'),
+          h('div', {className:'section-title'}, 'Points'),
           h('button', {type:'button', className:'btn primary', style:{marginBottom:18}, onClick:()=>setPpModalOpen(true)}, '+ Add Points'),
           PP_CATEGORIES.map(cat => h('div', {className:'pp-subsection', key:cat.key},
             h('div', {className:'pp-subtitle'}, cat.label),
