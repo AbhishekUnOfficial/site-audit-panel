@@ -708,7 +708,7 @@ function App(){
                   h('th', null, 'Audit Date'),
                   h('th', null, 'QE'),
                   h('th', null, 'Checks'),
-                  h('th', null, 'Punch Points'),
+                  h('th', null, 'Action'),
                   h('th', null, '')
                 )
               ),
