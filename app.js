@@ -67,8 +67,8 @@ const FIELD_GROUPS = [
 ];
 
 const PP_CATEGORIES = [
-  { key:'rectifiedPunchPoints', label:'Rectified Punch Points' },
   { key:'punchPoints', label:'Open Punch Points' },
+  { key:'rectifiedPunchPoints', label:'Rectified Punch Points' },
   { key:'observations', label:'Observations' },
 ];
 
