@@ -61,7 +61,7 @@ const FIELD_GROUPS = [
       ['inTime','In Time','time'],
       ['outTime','Out Time','time'],
       ['transportMode','Mode Of Transport','select',['Public','Private']],
-      ['distance','Distance','text'],
+      ['distance','Distance','numberUnit',{unit:'km'}],
     ]
   },
 ];
@@ -180,7 +180,7 @@ function buildFullStatusText(a){
       `In Time :- ${a.inTime || ""}`,
       `Out time :- ${a.outTime || ""}`,
       `Mode of Transport :- ${a.transportMode || ""}`,
-      `Distance :- ${a.distance || ""}`,
+      `Distance :- ${a.distance ? a.distance + ' km': ''}`,
       `Status :- ${a.status || ""}`,
     );
   
